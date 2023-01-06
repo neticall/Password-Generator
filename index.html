@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div class="container">
+    <p>Password Generator</p>
+    <div class="result">
+      <span class="pass">Password</span>
+      <img src="copy.svg" alt="">
+    </div>
+    <div class="setting">
+      <div class="characters">
+        <span>Characters Length</span>
+        <span class="length">12</span>
+      </div>
+      <input type="range" class="range">
+      <div>
+        <input type="checkbox" checked>
+        <label>Include Uppercase Letter</label>
+      </div>
+      <div>
+        <input type="checkbox" checked>
+        <label>Include Lowercase Letter</label>
+      </div>
+      <div>
+        <input type="checkbox" checked>
+        <label>Include Numbers</label>
+      </div>
+      <div>
+        <input type="checkbox" checked>
+        <label>Include Symbols</label>
+      </div>
+      <div class="strength">
+        STRENGTH
+        <span class="rangeStrength">MEDIUM
+          <span class="lamps">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span></span>
+          </span>
+        </span>
+      </div>
+      <div class="btn">
+        <span>GENERATE</span>
+        <img src="arrow.svg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

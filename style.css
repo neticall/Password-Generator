@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: Righteous;
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url("Righteous-Regular.ttf");
+}
+
+body {
+  color: #fff;
+  background: #101014;
+  font-size: 20px;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result {
+  background: #24232a;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  letter-spacing: 2px;
+}
+
+.setting {
+  display: flex;
+  flex-wrap: wrap;
+  background: #24232a;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+
+.setting>* {
+  flex-basis: 100%;
+  margin: 5px 0;
+}
+
+.length {
+  color: #a5ffaf;
+}
+
+.characters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range {
+  margin: 20px 0 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.5px;
+  background: #a5ffaf;
+  height: 1.5px;
+}
+
+label {
+  margin-left: 10px;
+}
+
+input {
+  accent-color: #a5ffaf;
+  width: 20px;
+  height: 20px;
+}
+
+.strength {
+  border-radius: 5px;
+  margin: 25px 0;
+  background: #18171f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.rangeStrength {
+  font-size: 16px;
+}
+
+.lamps {
+  margin-left: 10px;
+}
+
+.lamps * {
+  border: 1px solid #fff;
+  padding: 0 3px;
+  margin: 0 3px;
+}
+
+.active {
+  background: #e4ab0f;
+  border-color: #e4ab0f;
+}
+
+.btn {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #24232a;
+  border-radius: 5px;
+  background: #a5ffaf;
+  padding: 16px;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 95%;
+  }
+
+  .result {
+    padding: 20px 15px;
+  }
+
+  .setting {
+    padding: 20px 15px;
+  }
+}
