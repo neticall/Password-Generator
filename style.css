@@ -122,14 +122,10 @@ input {
 
 @media screen and (max-width: 400px) {
   .container {
-    width: 95%;
+    width: 80%;
   }
 
-  .result {
-    padding: 20px 15px;
-  }
-
-  .setting {
+  .result, .setting {
     padding: 20px 15px;
   }
 }
