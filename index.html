@@ -14,47 +14,50 @@
     <p>Password Generator</p>
     <div class="result">
       <span class="pass">Password</span>
-      <img src="copy.svg" alt="">
+      <img onclick="copy()" src="copy.svg" alt="">
     </div>
     <div class="setting">
       <div class="characters">
         <span>Characters Length</span>
         <span class="length">12</span>
       </div>
-      <input type="range" class="range">
-      <div>
-        <input type="checkbox" checked>
+      <input type="range" min="4" max="18" value="12" class="range">
+      <div class="checkboxes">
+        <input class="upper" type="checkbox" checked>
         <label>Include Uppercase Letter</label>
       </div>
-      <div>
-        <input type="checkbox" checked>
+      <div class="checkboxes">
+        <input class="lower" type="checkbox" checked>
         <label>Include Lowercase Letter</label>
       </div>
-      <div>
-        <input type="checkbox" checked>
+      <div class="checkboxes">
+        <input class="numbers" type="checkbox" checked>
         <label>Include Numbers</label>
       </div>
-      <div>
-        <input type="checkbox" checked>
+      <div class="checkboxes">
+        <input class="symbols" type="checkbox" checked>
         <label>Include Symbols</label>
       </div>
       <div class="strength">
         STRENGTH
-        <span class="rangeStrength">MEDIUM
+        <span class="rangeStrength">
+          <span class="statusStrength">MEDIUM</span>
           <span class="lamps">
-            <span class="active"></span>
-            <span class="active"></span>
-            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <span></span>
           </span>
         </span>
       </div>
-      <div class="btn">
+      <div class="btn" onclick="passGenerate()">
         <span>GENERATE</span>
         <img src="arrow.svg" alt="">
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
